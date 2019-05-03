@@ -7,6 +7,7 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtWidgets import QSizePolicy
 # hashlib套件用於建算雜湊值
 import  hashlib
 import sys
@@ -15,9 +16,9 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         # 重設視窗大小
-        MainWindow.resize(1550, 350)
+        MainWindow.resize(1600, 350)
         # 設定視窗最大大小
-        MainWindow.setMaximumSize(1550, 350)
+        MainWindow.setMaximumSize(1600, 350)
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap("magnifier.png"), QtGui.QIcon.Normal, QtGui.QIcon.On)
         MainWindow.setWindowIcon(icon)
@@ -28,7 +29,7 @@ class Ui_MainWindow(object):
         self.formLayoutWidget = QtWidgets.QWidget(self.centralwidget)
         # 設定表格佈局大小
         # setGeometry(QtCore.QRect(x position, y position, width, height))
-        self.formLayoutWidget.setGeometry(QtCore.QRect(10, 20, 1550, 80))
+        self.formLayoutWidget.setGeometry(QtCore.QRect(10, 20, 1600, 80))
         self.formLayoutWidget.setObjectName("formLayoutWidget")
         self.formLayout = QtWidgets.QFormLayout(self.formLayoutWidget)
         self.formLayout.setContentsMargins(0, 0, 0, 0)
@@ -85,13 +86,14 @@ class Ui_MainWindow(object):
         self.read_hash_label.setTextInteractionFlags(QtCore.Qt.TextSelectableByMouse)
         # 自動調整read_hash_label標籤至適合大小
         self.read_hash_label.adjustSize()
+        # self.read_hash_label.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
         # 設定read_hash_label標籤在右邊，LabelRole左邊，FieldRole右邊
         self.formLayout.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.read_hash_label)
 
 
         # 建立formLayoutWidget_2表格佈局元件
         self.formLayoutWidget_2 = QtWidgets.QWidget(self.centralwidget)
-        self.formLayoutWidget_2.setGeometry(QtCore.QRect(10, 120, 1490, 61))
+        self.formLayoutWidget_2.setGeometry(QtCore.QRect(10, 120, 1520, 61))
         self.formLayoutWidget_2.setObjectName("formLayoutWidget_2")
         self.formLayout_2 = QtWidgets.QFormLayout(self.formLayoutWidget_2)
         self.formLayout_2.setContentsMargins(0, 0, 0, 0)
