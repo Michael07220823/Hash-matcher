@@ -6,14 +6,14 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>893</width>
-    <height>429</height>
+    <width>1550</width>
+    <height>350</height>
    </rect>
   </property>
   <property name="maximumSize">
    <size>
-    <width>893</width>
-    <height>429</height>
+    <width>1550</width>
+    <height>350</height>
    </size>
   </property>
   <property name="baseSize">
@@ -36,7 +36,7 @@
      <rect>
       <x>10</x>
       <y>20</y>
-      <width>861</width>
+      <width>1491</width>
       <height>80</height>
      </rect>
     </property>
@@ -49,7 +49,7 @@
         </font>
        </property>
        <property name="text">
-        <string>Choose file</string>
+        <string>Choose file(ctrl+o)</string>
        </property>
        <property name="shortcut">
         <string>Ctrl+O</string>
@@ -119,14 +119,20 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>140</y>
-      <width>861</width>
-      <height>61</height>
+      <y>110</y>
+      <width>1491</width>
+      <height>41</height>
      </rect>
     </property>
     <layout class="QFormLayout" name="formLayout_2">
-     <item row="0" column="0">
-      <widget class="QComboBox" name="choos_hash_2">
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="author_hash_code_lineEdit">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
        <property name="font">
         <font>
          <pointsize>12</pointsize>
@@ -134,12 +140,30 @@
        </property>
       </widget>
      </item>
-     <item row="0" column="1">
-      <widget class="QLineEdit" name="lineEdit">
+     <item row="0" column="0">
+      <widget class="QLabel" name="author_label">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="baseSize">
+        <size>
+         <width>200</width>
+         <height>20</height>
+        </size>
+       </property>
        <property name="font">
         <font>
          <pointsize>12</pointsize>
         </font>
+       </property>
+       <property name="text">
+        <string>author code</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
       </widget>
      </item>
@@ -148,15 +172,18 @@
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>260</y>
-      <width>160</width>
-      <height>90</height>
+      <x>480</x>
+      <y>190</y>
+      <width>621</width>
+      <height>120</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
-      <widget class="QLabel" name="label">
+      <widget class="QLabel" name="display_result_label">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
        <property name="font">
         <font>
          <family>Adobe Arabic</family>
@@ -177,11 +204,11 @@
       <widget class="QPushButton" name="match_button">
        <property name="font">
         <font>
-         <pointsize>18</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="text">
-        <string>Match</string>
+        <string>Match(ctrl+m)</string>
        </property>
       </widget>
      </item>
@@ -193,7 +220,7 @@
         </font>
        </property>
        <property name="text">
-        <string>Exit</string>
+        <string>Exit(ctrl+e)</string>
        </property>
       </widget>
      </item>
@@ -205,8 +232,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>893</width>
-     <height>22</height>
+     <width>1550</width>
+     <height>26</height>
     </rect>
    </property>
   </widget>
