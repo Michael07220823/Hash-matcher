@@ -1,2 +1,2 @@
 # Hash-matcher
-Comparator the file is real or not.
+Compare the file is real or not.
