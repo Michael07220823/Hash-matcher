@@ -1,2 +1,12 @@
+![Alt text](hash_matcher.png)
+
 # Hash-matcher
-Compare the file is real or not.
+Check if the file has been modified or the integrity of the file.
+
+## Usage
+`python hash_matcher.py`
+
+### shortcut:<br>
+open file: `ctrl+o`<br>
+Match    : `ctrl+m`<br>
+exit     : `ctrl+e`<br>
