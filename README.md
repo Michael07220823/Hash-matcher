@@ -7,6 +7,6 @@ Check if the file has been modified or the integrity of the file.
 `python hash_matcher.py`
 
 ### hot keys:<br>
-open file: `ctrl+o`<br>
-Match    : `ctrl+m`<br>
-exit     : `ctrl+e`<br>
+open file&ensp;: `ctrl+o`<br>
+Match&ensp;&ensp;&ensp;: `ctrl+m`<br>
+exit &ensp;&ensp;&ensp;&ensp;&ensp;: `ctrl+e`<br>
